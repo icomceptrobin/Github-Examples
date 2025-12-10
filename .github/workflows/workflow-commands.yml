@@ -6,9 +6,15 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
-            - name: step1
+            - name: step1 group logging
               run: |
                 echo "::group::My Group message"
                 echo "msg1"
                 echo "msg2"
                 echo "::endgroup::"
+            - name: step2 something something
+              run: |
+                echo "MY_VAL=hello" >> $GITHUB_ENV
+            - name: step3 read something from something something
+              run: |
+                echo $MY_VAL
