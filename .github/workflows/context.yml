@@ -10,3 +10,11 @@ jobs:
               run: echo "nudelsalat $MY_ACTION"
               env:
                 MY_ACTION: ${{ github.action}}
+            - name: step1
+              run: echo "nudelsalat $MY_ACTOR"
+              env:
+                MY_ACTOR: ${{ github.actor}}
+            - name: step1
+              run: echo "nudelsalat $MY_ACTION"
+              env:
+                TRIGGERING_ACTOR: ${{ github.triggering_actor}}
