@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: icomceptrobin/custom-action@0.0.2
+        uses: icomceptrobin/custom-action@0.0.3
         with:
           name: Nudelbaron
 
